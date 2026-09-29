@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+.cwlab-state*
+build/
+evidence/
+*.zip
+*.pem
+.env

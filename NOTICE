@@ -1,0 +1,21 @@
+Amazon CloudWatch in 60 Minutes — companion code
+Copyright (c) 2026 Mason Ye.
+
+Licensed under the Zero-Clause BSD license (0BSD); see LICENSE-CODE.txt. The
+code is provided "as is", without warranty of any kind. You are responsible for
+the AWS account you use, the identity you assume, the resources this code
+creates, and the costs you incur.
+
+"Amazon CloudWatch", "AWS", and related names are trademarks of Amazon.com, Inc.
+or its affiliates. This is an independent educational work, not affiliated with,
+authorized by, or endorsed by Amazon.com, Inc. or its affiliates.
+
+This code operates on real AWS resources. It is bounded by design (see
+README.md), uses only synthetic demonstration data, creates no notification or
+dashboard resources, and refuses to run as the account root user. Review it
+before running.
+
+The private publisher reference-run adapter used to produce the book's evidence
+on an existing console session is NOT part of this repository; distributed use
+requires an authorized non-root IAM identity, and the root-refusal guard is
+covered by the offline tests.

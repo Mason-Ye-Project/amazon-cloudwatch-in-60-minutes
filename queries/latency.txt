@@ -1,0 +1,1 @@
+stats count(*) as requests, avg(duration_ms) as mean_ms, pct(duration_ms, 95) as p95_ms by operation

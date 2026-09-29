@@ -1,0 +1,2 @@
+stats count(*) as events by level
+| sort events desc

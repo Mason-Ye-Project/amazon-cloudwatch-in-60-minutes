@@ -1,0 +1,4 @@
+fields @timestamp, level, operation, error_code, correlation_id
+| filter level = "ERROR"
+| sort @timestamp asc
+| limit 20
