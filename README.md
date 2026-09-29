@@ -30,7 +30,8 @@ python3 cwlab.py query --query levels
 python3 cwlab.py query --query latency
 python3 cwlab.py metric --value 3
 python3 cwlab.py observe
-python3 cwlab.py metric --value 0     # optional, in a later minute, to watch it clear
+# Optional: wait until the earlier 3 is outside the 60-second window.
+python3 cwlab.py metric --value 0
 python3 cwlab.py cleanup
 ```
 

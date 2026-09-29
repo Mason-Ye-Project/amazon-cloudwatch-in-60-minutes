@@ -12,17 +12,15 @@
         "logs:CreateLogStream",
         "logs:PutLogEvents",
         "logs:StartQuery",
+        "logs:GetQueryResults",
         "logs:DeleteLogGroup"
       ],
       "Resource": "arn:aws:logs:us-east-1:ACCOUNT_ID:log-group:/booklabs/cw60-*:*"
     },
     {
-      "Sid": "LabLogsQueryNoResourceType",
+      "Sid": "LabStopQueryNoResourceType",
       "Effect": "Allow",
-      "Action": [
-        "logs:GetQueryResults",
-        "logs:StopQuery"
-      ],
+      "Action": "logs:StopQuery",
       "Resource": "*"
     },
     {
@@ -37,13 +35,9 @@
       }
     },
     {
-      "Sid": "LabMetricReadsAccountWide",
+      "Sid": "LabMetricReadAccountWide",
       "Effect": "Allow",
-      "Action": [
-        "cloudwatch:GetMetricStatistics",
-        "cloudwatch:GetMetricData",
-        "cloudwatch:ListMetrics"
-      ],
+      "Action": "cloudwatch:GetMetricStatistics",
       "Resource": "*"
     },
     {
